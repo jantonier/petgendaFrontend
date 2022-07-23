@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from '../screen/login/LoginScreen';
 import HomeScreen from '../screen/home/HomeScreen';
+import SettingsScreen from '../screen/settings/SettingsScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
@@ -19,6 +20,14 @@ function MyTabs() {
         options={{
           title: 'Home',
           tabBarLabel: 'Home',
+        }}
+      />
+      <Tab.Screen
+        name="settings"
+        component={SettingsScreen}
+        options={{
+          title: 'Settings',
+          tabBarLabel: 'Settings',
         }}
       />
       <Tab.Screen
