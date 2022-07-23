@@ -21,6 +21,14 @@ function MyTabs() {
           tabBarLabel: 'Home',
         }}
       />
+      <Tab.Screen
+        name="logout"
+        component={LoginScreen}
+        options={{
+          title: 'Logout',
+          tabBarLabel: 'Logout',
+        }}
+      />
     </Tab.Navigator>
   );
 }
@@ -29,7 +37,7 @@ function Navigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="login" component={LoginScreen} />
+        <Stack.Screen options={{ headerShown: false }} name="login" component={LoginScreen} />
         <Stack.Screen
           name="tabsHome"
           component={MyTabs}

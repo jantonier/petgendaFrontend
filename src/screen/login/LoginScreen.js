@@ -1,6 +1,17 @@
 // In App.js in a new project
 
-import { Box, Text, Button, Center } from 'native-base';
+import {
+  Box,
+  Text,
+  Button,
+  Center,
+  Heading,
+  VStack,
+  FormControl,
+  Input,
+  Link,
+  HStack,
+} from 'native-base';
 import * as React from 'react';
 
 // function LoginScreen({ navigation }) {
@@ -25,7 +36,7 @@ import * as React from 'react';
 const LoginScreen = ({ navigation }) => {
   return (
     <Center w="100%">
-      <Box safeArea p="2" py="8" w="90%" maxW="290">
+      <Box safeArea p="2" py="8" w="90%" maxW="500">
         <Heading
           size="lg"
           fontWeight="600"
@@ -34,7 +45,7 @@ const LoginScreen = ({ navigation }) => {
             color: 'warmGray.50',
           }}
         >
-          Welcome
+          Welcome to Petgenda
         </Heading>
         <Heading
           mt="1"
@@ -68,7 +79,13 @@ const LoginScreen = ({ navigation }) => {
               Forget Password?
             </Link>
           </FormControl>
-          <Button mt="2" colorScheme="indigo">
+          <Button
+            onPress={() => {
+              navigation.navigate('tabsHome', { id: 'iqoiowio' });
+            }}
+            mt="2"
+            colorScheme="indigo"
+          >
             Sign in
           </Button>
           <HStack mt="6" justifyContent="center">
