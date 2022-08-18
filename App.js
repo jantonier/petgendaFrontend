@@ -85,14 +85,19 @@
 // }
 
 import React from 'react';
-// 1. import `NativeBaseProvider` component
 import { NativeBaseProvider, Text, Box } from 'native-base';
 import Navigation from './src/navigation';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function App() {
   // 2. Use at the root of your app
+  const config = {
+    dependencies: {
+      'linear-gradient': LinearGradient,
+    },
+  };
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider config={config}>
       <Navigation />
     </NativeBaseProvider>
   );

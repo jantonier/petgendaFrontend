@@ -17,25 +17,6 @@ import {
 } from 'native-base';
 import * as React from 'react';
 
-// function LoginScreen({ navigation }) {
-//   return (
-//     <Box style={{ flex: 1, backgroundColor: 'white' }}>
-//       <Box style={{ flex: 1, backgroundColor: 'green', alignItems: 'center' }}>
-//         <Text>Hola Box arriba</Text>
-//       </Box>
-//       <Box style={{ flex: 2, backgroundColor: 'blue', alignItems: 'center' }}>
-//         <Button
-//           onPress={() => {
-//             navigation.navigate('tabsHome', { id: 'iqoiowio' });
-//           }}
-//         >
-//           Hola BTN
-//         </Button>
-//       </Box>
-//     </Box>
-//   );
-// }
-
 const LoginScreen = ({ navigation }) => {
   return (
     <Center w="100%">
@@ -84,7 +65,7 @@ const LoginScreen = ({ navigation }) => {
           </FormControl>
           <Button
             onPress={() => {
-              navigation.navigate('tabsHome', { id: 'iqoiowio' });
+              navigation.navigate('tabsHome');
             }}
             mt="2"
             colorScheme="indigo"
