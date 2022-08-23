@@ -50,7 +50,7 @@ function Navigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {/* <Stack.Screen options={{ headerShown: false }} name="login" component={LoginScreen} /> */}
+        <Stack.Screen options={{ headerShown: false }} name="login" component={LoginScreen} />
         <Stack.Screen name="tabsHome" component={MyTabs} options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen options={{ headerShown: false }} name="petinfo" component={PetInfoScreen} />
         <Stack.Screen options={{ headerShown: false }} name="addpet" component={AddPetScreen} />
